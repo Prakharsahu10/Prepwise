@@ -1,6 +1,6 @@
-# Echofy - AI-Powered Interview Practice Platform
+# Prepwise - AI-Powered Interview Practice Platform
 
-Echofy is a modern web application that helps users prepare for technical interviews using AI-powered practice sessions and feedback. The platform provides a realistic interview experience with instant feedback and personalized guidance.
+Prepwise is a modern web application that helps users prepare for technical interviews using AI-powered practice sessions and feedback. The platform provides a realistic interview experience with instant feedback and personalized guidance.
 
 ## Features
 
