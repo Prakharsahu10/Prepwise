@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Echofy - AI-Powered Interview Practice Platform
+
+Echofy is a modern web application that helps users prepare for technical interviews using AI-powered practice sessions and feedback. The platform provides a realistic interview experience with instant feedback and personalized guidance.
+
+## Features
+
+- 🤖 AI-powered interview simulations
+- 📊 Real-time feedback and analysis
+- 🎯 Role-specific interview questions
+- 🔄 Multiple interview types and tech stacks
+- 📱 Responsive design for all devices
+- 🔒 Secure authentication with Firebase
+- 🌙 Dark/Light mode support
+
+## Tech Stack
+
+- **Framework:** Next.js 15.3.0
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Authentication:** Firebase
+- **AI Integration:** Google AI SDK, Vapi AI
+- **UI Components:** Radix UI
+- **Form Handling:** React Hook Form
+- **Validation:** Zod
+- **State Management:** React Hooks
+- **Animations:** Tailwind Animate
+
+## Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm or yarn
+- Firebase account
+- Google AI API access
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+   ```bash
+   git clone https://github.com/yourusername/echofy.git
+   cd echofy
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory with the following variables:
+
+   ```
+   NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+   NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+   GOOGLE_AI_API_KEY=your_google_ai_api_key
+   ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+echofy/
+├── app/                 # Next.js app directory
+│   ├── (root)/         # Main application routes
+│   ├── api/            # API routes
+│   └── (auth)/         # Authentication routes
+├── components/         # Reusable React components
+├── lib/               # Utility functions and actions
+├── types/             # TypeScript type definitions
+├── constants/         # Application constants
+├── firebase/          # Firebase configuration
+└── public/            # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Available Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build the application for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint for code linting
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Acknowledgments
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js team for the amazing framework
+- Firebase for authentication and database services
+- Google AI for providing the AI capabilities
+- All contributors who have helped shape this project
